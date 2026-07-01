@@ -1,3 +1,5 @@
+**Project 2 - Responsive-Web-Layout**
+
 DecodeLabs Frontend Project 2 Responsive Web Layout | Batch 2026 | Powered by DecodeLabs Project Overview TechPulse is a fully responsive website built as part of DecodeLabs Frontend Project 2. The goal was to build a fluid, device-agnostic web layout using pure HTML, CSS, and JavaScript with no frameworks or libraries. File Structure project2/ index.html - Page structure and content style.css - All styling, layout, and media queries script.js - Interactivity and scroll animations README.md - This file Project 2 Checklist RequirementStatusMeta viewport tagDoneMobile-First Base CSSDoneCSS Grid (Macro layout)DoneFlexbox (Micro/component layout)DoneFluid Units (%, rem, vw, clamp())DoneCSS Media Queries (3 breakpoints)DoneResponsive NavigationDoneHamburger / Popover MenuDoneAccessible Touch Targets (min 44x44px)DoneProper Spacing and AlignmentDoneSeparate HTML, CSS, JS filesDone Tech Stack
 
 HTML5 - Semantic elements, Popover API CSS3 - Custom Properties, Grid, Flexbox, clamp(), Media Queries Vanilla JavaScript - IntersectionObserver, scroll animations, count-up effect
