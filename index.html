@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechPulse — DecodeLabs Project 2</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!--  MOBILE NAV POPOVER  -->
+<div id="mobile-nav" popover>
+  <button class="mobile-close" popovertarget="mobile-nav" popovertargetaction="hide" aria-label="Close menu">✕</button>
+  <ul class="mobile-links">
+    <li><a href="#home"     popovertarget="mobile-nav" popovertargetaction="hide">Home</a></li>
+    <li><a href="#features" popovertarget="mobile-nav" popovertargetaction="hide">Features</a></li>
+    <li><a href="#articles" popovertarget="mobile-nav" popovertargetaction="hide">Articles</a></li>
+    <li><a href="#team"     popovertarget="mobile-nav" popovertargetaction="hide">Team</a></li>
+    <li><a href="#contact"  popovertarget="mobile-nav" popovertargetaction="hide">Contact</a></li>
+  </ul>
+</div>
+
+<!-- NAV  -->
+<nav class="nav" id="home">
+  <div class="nav-logo">Tech<span>Pulse</span></div>
+
+  <ul class="nav-links" role="list">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#articles">Articles</a></li>
+    <li><a href="#team">Team</a></li>
+  </ul>
+
+  <a href="#contact" class="nav-cta" id="desktop-cta">Get Started</a>
+
+  <button class="burger" popovertarget="mobile-nav" aria-label="Open navigation menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE -->
+<main class="page">
+
+  <!-- HERO -->
+  <section class="hero container" aria-labelledby="hero-heading">
+    <div class="hero-content">
+      <div class="hero-badge">DecodeLabs · Project 2</div>
+      <h1 class="hero-title" id="hero-heading">
+        Design for<br /><span class="hl">Every Screen.</span><br />Every Device.
+      </h1>
+      <p class="hero-sub">
+        Fluid layouts, smart breakpoints, and mobile-first thinking —
+        building interfaces that feel native at any resolution.
+      </p>
+      <div class="hero-btns">
+        <a href="#features" class="btn-primary">Explore Features</a>
+        <a href="#articles" class="btn-ghost">Read Articles</a>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <div class="vis-card">
+        <div class="vis-label">Mobile Traffic</div>
+        <div class="vis-val green">62.7%</div>
+        <div class="vis-bar"><div class="vis-bar-fill" style="width:62.7%"></div></div>
+      </div>
+      <div class="vis-card">
+        <div class="vis-label">Breakpoints</div>
+        <div class="vis-val blue">3</div>
+        <div class="vis-bar"><div class="vis-bar-fill" style="width:80%"></div></div>
+      </div>
+      <div class="vis-card">
+        <div class="vis-label">Layout Score</div>
+        <div class="vis-val green">99%</div>
+        <div class="vis-bar"><div class="vis-bar-fill" style="width:99%"></div></div>
+      </div>
+      <div class="vis-card">
+        <div class="vis-label">WCAG Pass</div>
+        <div class="vis-val blue">AA</div>
+        <div class="vis-bar"><div class="vis-bar-fill" style="width:100%"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <div class="stats" role="list" aria-label="Key statistics">
+    <div class="stat-item" role="listitem">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Breakpoints</div>
+    </div>
+    <div class="stat-item" role="listitem">
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Fluid Units</div>
+    </div>
+    <div class="stat-item" role="listitem">
+      <div class="stat-num">0px</div>
+      <div class="stat-label">Horizontal Overflow</div>
+    </div>
+    <div class="stat-item" role="listitem">
+      <div class="stat-num">44px</div>
+      <div class="stat-label">Min Touch Target</div>
+    </div>
+  </div>
+
+  <!-- FEATURES -->
+  <section class="section container" id="features" aria-labelledby="feat-heading">
+    <div class="section-tag">Core Techniques</div>
+    <h2 class="section-title" id="feat-heading">Built on Responsive Principles</h2>
+    <p class="section-sub">Every technique used here maps directly to the Project 2 implementation checklist from DecodeLabs.</p>
+
+    <div class="features-grid">
+      <div class="feat-card">
+        <div class="feat-icon">📐</div>
+        <h3>CSS Grid (Macro)</h3>
+        <p>The outer scaffold — header, sidebar, main, footer. Grid defines the structural architecture, giving each zone its rightful space.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🧩</div>
+        <h3>Flexbox (Micro)</h3>
+        <p>Inside every card and component, Flexbox aligns, distributes, and wraps content fluidly — the furniture inside the house.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">📱</div>
+        <h3>Mobile-First CSS</h3>
+        <p>Base styles target the smallest screen. <code>@media (min-width)</code> progressively layers desktop enhancements on top.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">🔤</div>
+        <h3>Fluid Typography</h3>
+        <p>Every font size uses <code>clamp(min, fluid, max)</code> — text scales smoothly across the full viewport range with no abrupt jumps.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">☰</div>
+        <h3>Popover Navigation</h3>
+        <p>The hamburger menu uses the native HTML Popover API. No JavaScript required — built-in accessibility and backdrop included.</p>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon">♿</div>
+        <h3>Accessible Targets</h3>
+        <p>All interactive elements meet the 44×44px minimum touch target size. Zoom is never blocked — <code>user-scalable=no</code> is forbidden.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="section container" id="articles" aria-labelledby="art-heading">
+    <div class="section-tag">Latest Reads</div>
+    <h2 class="section-title" id="art-heading">From the DecodeLabs Blog</h2>
+    <p class="section-sub">Resources to deepen your understanding of responsive architecture.</p>
+
+    <div class="articles-layout">
+      <article class="article-main">
+        <div class="article-thumb" aria-hidden="true">🌊</div>
+        <div class="article-body">
+          <div class="article-meta">
+            <span class="tag tag-green">CSS</span>
+            <span class="tag tag-blue">Layout</span>
+            <span class="article-date">June 2026</span>
+          </div>
+          <h2>Content is Like Water — The Philosophy of Fluid Design</h2>
+          <p>Fixed-pixel thinking is like forcing water into a rigid box — it overflows, cracks, and fails. The fluid approach lets content adapt to its container, whether that's a 320px phone or a 4K monitor.</p>
+          <a href="#" class="read-more" aria-label="Read full article about fluid design">Read full article →</a>
+        </div>
+      </article>
+
+      <aside class="sidebar" aria-label="More articles">
+        <a href="#" class="sidebar-card">
+          <div class="sb-num">01</div>
+          <div class="sb-info">
+            <span class="tag tag-green" style="margin-bottom:.4rem;display:inline-block;">Viewport</span>
+            <h4>The Viewport Meta Tag Explained</h4>
+            <p>Why <code>width=device-width</code> is the single most important responsive line you'll ever write.</p>
+          </div>
+        </a>
+        <a href="#" class="sidebar-card">
+          <div class="sb-num">02</div>
+          <div class="sb-info">
+            <span class="tag tag-blue" style="margin-bottom:.4rem;display:inline-block;">Flexbox</span>
+            <h4>Grid vs Flexbox: Know the Difference</h4>
+            <p>One is a two-dimensional architect, the other a one-dimensional specialist. Use both correctly.</p>
+          </div>
+        </a>
+        <a href="#" class="sidebar-card">
+          <div class="sb-num">03</div>
+          <div class="sb-info">
+            <span class="tag tag-red" style="margin-bottom:.4rem;display:inline-block;">A11y</span>
+            <h4>Accessibility is Non-Negotiable</h4>
+            <p>WCAG compliance, zoom allowance, and thumb-zone design for real mobile users.</p>
+          </div>
+        </a>
+        <a href="#" class="sidebar-card">
+          <div class="sb-num">04</div>
+          <div class="sb-info">
+            <span class="tag tag-green" style="margin-bottom:.4rem;display:inline-block;">Typography</span>
+            <h4>Fluid Type with clamp()</h4>
+            <p>Say goodbye to stepped font sizes — continuous scaling from 1rem to 2rem in one declaration.</p>
+          </div>
+        </a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section container" id="team" aria-labelledby="team-heading">
+    <div class="section-tag">The Builders</div>
+    <h2 class="section-title" id="team-heading">DecodeLabs Batch 2026</h2>
+    <p class="section-sub">Interns mastering the art of fluidity — one breakpoint at a time.</p>
+
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="avatar" style="background:rgba(79,255,176,.1)">👩‍💻</div>
+        <h3>Aisha Khan</h3>
+        <p>UI/UX Intern</p>
+        <span class="role-badge">Frontend</span>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:rgba(0,180,255,.1)">👨‍💻</div>
+        <h3>Rayan Malik</h3>
+        <p>Dev Intern</p>
+        <span class="role-badge">CSS Grid</span>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:rgba(255,107,107,.1)">👩‍🎨</div>
+        <h3>Sara Ahmed</h3>
+        <p>Design Intern</p>
+        <span class="role-badge">Flexbox</span>
+      </div>
+      <div class="team-card">
+        <div class="avatar" style="background:rgba(79,255,176,.1)">👨‍🎨</div>
+        <h3>Omar Siddiqui</h3>
+        <p>Dev Intern</p>
+        <span class="role-badge">Responsive</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-inner">
+      <div class="section-tag" style="justify-content:center;display:flex;">Get in Touch</div>
+      <h2 class="section-title">Ready to Submit Project 2?</h2>
+      <p class="section-sub" style="margin-left:auto;margin-right:auto;">
+        You've built a responsive layout, mastered media queries, and designed for every screen. Time to earn your badge.
+      </p>
+      <div class="contact-btns">
+        <a href="mailto:decodelabs.tech@gmail.com" class="btn-primary">📧 Email DecodeLabs</a>
+        <a href="https://www.decodelabs.tech" class="btn-ghost" target="_blank" rel="noopener">🌎 Visit Website</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Tech<span>Pulse</span></div>
+  <ul class="footer-links" role="list">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#articles">Articles</a></li>
+    <li><a href="#team">Team</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <small>© 2026 DecodeLabs · Frontend Project 2 · Batch 2026</small>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
